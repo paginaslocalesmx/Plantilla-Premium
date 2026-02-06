@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimizado -->
+    <title>[NOMBRE_NEGOCIO] - [SLOGAN]</title>
+    <meta name="description" content="[DESCRIPCION_CORTA] en [CIUDAD]. Servicio premium, atención personalizada.">
+    <meta name="keywords" content="[PALABRAS_CLAVE], [CIUDAD], [SERVICIO_PRINCIPAL]">
+    <meta name="author" content="[NOMBRE_NEGOCIO]">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[URL_SITIO]">
+    <meta property="og:title" content="[NOMBRE_NEGOCIO] - [SLOGAN]">
+    <meta property="og:description" content="[DESCRIPCION_CORTA]">
+    <meta property="og:image" content="[URL_IMAGEN_PREVIEW]">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="[URL_SITIO]">
+    <meta property="twitter:title" content="[NOMBRE_NEGOCIO]">
+    <meta property="twitter:description" content="[DESCRIPCION_CORTA]">
+    
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "[NOMBRE_NEGOCIO]",
+        "description": "[DESCRIPCION_CORTA]",
+        "url": "[URL_SITIO]",
+        "telephone": "[TELEFONO]",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "[DIRECCION]",
+            "addressLocality": "[CIUDAD]",
+            "addressCountry": "MX"
+        },
+        "openingHours": "[HORARIO_SCHEMA]",
+        "priceRange": "$$"
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Fuentes Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="theme-restaurant">
+    
+    <!-- ============================================
+         NAVEGACIÓN PREMIUM CON GLASSMORPHISM
+    ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/placeholder/logo.png" alt="[NOMBRE_NEGOCIO] Logo" class="logo-img">
+                <span class="logo-text">[NOMBRE_NEGOCIO]</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="https://wa.me/[WHATSAPP]?text=Hola, me interesa información sobre [NOMBRE_NEGOCIO]" 
+                   class="btn-whatsapp-nav" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION - PARALLAX CINEMATOGRÁFICO
+    ============================================= -->
+    <section class="hero" id="inicio">
+        <div class="hero-parallax-bg" id="heroParallax"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in-up" style="animation-delay: 0.2s">
+                <i class="fas fa-star"></i> Premium Quality
+            </div>
+            
+            <h1 class="hero-title animate-fade-in-up" style="animation-delay: 0.4s">
+                [NOMBRE_NEGOCIO]
+            </h1>
+            
+            <p class="hero-subtitle animate-fade-in-up" style="animation-delay: 0.6s">
+                [SLOGAN]
+            </p>
+            
+            <p class="hero-description animate-fade-in-up" style="animation-delay: 0.8s">
+                [DESCRIPCION_HERO]
+            </p>
+            
+            <div class="hero-cta animate-fade-in-up" style="animation-delay: 1s">
+                <a href="#contacto" class="btn btn-primary btn-3d">
+                    <span>Agenda tu cita</span>
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+                <a href="#servicios" class="btn btn-secondary btn-3d">
+                    <span>Nuestros servicios</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse"></div>
+            <p>Desliza para descubrir</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BENEFICIOS VISUALES CON ICONOS
+    ============================================= -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card" data-animate="fade-in-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Calidad Premium</h3>
+                    <p>[BENEFICIO_1]</p>
+                </div>
+                
+                <div class="benefit-card" data-animate="fade-in-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Atención Rápida</h3>
+                    <p>[BENEFICIO_2]</p>
+                </div>
+                
+                <div class="benefit-card" data-animate="fade-in-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Servicio Personalizado</h3>
+                    <p>[BENEFICIO_3]</p>
+                </div>
+                
+                <div class="benefit-card" data-animate="fade-in-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% Garantizado</h3>
+                    <p>[BENEFICIO_4]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         NOSOTROS - PARALLAX SECTION
+    ============================================= -->
+    <section class="about parallax-section" id="nosotros">
+        <div class="parallax-bg" data-speed="0.5"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-animate="fade-in-right">
+                    <span class="section-label">Conócenos</span>
+                    <h2 class="section-title">Sobre [NOMBRE_NEGOCIO]</h2>
+                    <p class="section-description">
+                        [DESCRIPCION_NOSOTROS_1]
+                    </p>
+                    <p>
+                        [DESCRIPCION_NOSOTROS_2]
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="[AÑOS_EXPERIENCIA]">0</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="[CLIENTES_FELICES]">0</span>
+                            <span class="stat-label">Clientes felices</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="[PROYECTOS_REALIZADOS]">0</span>
+                            <span class="stat-label">Proyectos realizados</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-animate="fade-in-left">
+                    <img src="assets/images/placeholder/about.jpg" alt="Sobre nosotros">
+                    <div class="about-badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICIOS / PRODUCTOS
+    ============================================= -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in-up">
+                <span class="section-label">Lo que ofrecemos</span>
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-description">[DESCRIPCION_SERVICIOS]</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card" data-animate="fade-in-up">
+                    <div class="service-image">
+                        <img src="assets/images/placeholder/service1.jpg" alt="[SERVICIO_1]">
+                        <div class="service-overlay">
+                            <a href="#contacto" class="service-btn">Solicitar ahora</a>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>[SERVICIO_1]</h3>
+                        <p>[DESCRIPCION_SERVICIO_1]</p>
+                        <div class="service-price">Desde $[PRECIO_1]</div>
+                    </div>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card featured" data-animate="fade-in-up">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i> Más Popular
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/images/placeholder/service2.jpg" alt="[SERVICIO_2]">
+                        <div class="service-overlay">
+                            <a href="#contacto" class="service-btn">Solicitar ahora</a>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>[SERVICIO_2]</h3>
+                        <p>[DESCRIPCION_SERVICIO_2]</p>
+                        <div class="service-price">Desde $[PRECIO_2]</div>
+                    </div>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card" data-animate="fade-in-up">
+                    <div class="service-image">
+                        <img src="assets/images/placeholder/service3.jpg" alt="[SERVICIO_3]">
+                        <div class="service-overlay">
+                            <a href="#contacto" class="service-btn">Solicitar ahora</a>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>[SERVICIO_3]</h3>
+                        <p>[DESCRIPCION_SERVICIO_3]</p>
+                        <div class="service-price">Desde $[PRECIO_3]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PRODUCTO BANDERA / OFERTA ESPECIAL
+    ============================================= -->
+    <section class="featured-product parallax-section">
+        <div class="parallax-bg" data-speed="0.3"></div>
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image" data-animate="zoom-in">
+                    <img src="assets/images/placeholder/featured.jpg" alt="[PRODUCTO_BANDERA]">
+                </div>
+                <div class="featured-text" data-animate="fade-in-left">
+                    <span class="featured-label">Oferta Especial</span>
+                    <h2>[PRODUCTO_BANDERA]</h2>
+                    <p class="featured-description">[DESCRIPCION_PRODUCTO_BANDERA]</p>
+                    
+                    <ul class="featured-benefits">
+                        <li><i class="fas fa-check-circle"></i> [BENEFICIO_PRODUCTO_1]</li>
+                        <li><i class="fas fa-check-circle"></i> [BENEFICIO_PRODUCTO_2]</li>
+                        <li><i class="fas fa-check-circle"></i> [BENEFICIO_PRODUCTO_3]</li>
+                    </ul>
+                    
+                    <div class="featured-price">
+                        <span class="price-old">$[PRECIO_ANTERIOR]</span>
+                        <span class="price-current">$[PRECIO_OFERTA]</span>
+                        <span class="price-label">Oferta limitada</span>
+                    </div>
+                    
+                    <a href="https://wa.me/[WHATSAPP]?text=Me interesa la oferta de [PRODUCTO_BANDERA]" 
+                       class="btn btn-primary btn-3d" target="_blank">
+                        <span>Aprovechar oferta</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GALERÍA EXPANDIBLE
+    ============================================= -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in-up">
+                <span class="section-label">Nuestro trabajo</span>
+                <h2 class="section-title">Galería</h2>
+                <p class="section-description">Conoce algunos de nuestros trabajos más recientes</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-animate="fade-in-up">
+                    <img src="assets/images/placeholder/gallery1.jpg" alt="Galería 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(0)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-animate="fade-in-up">
+                    <img src="assets/images/placeholder/gallery2.jpg" alt="Galería 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(1)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-animate="fade-in-up">
+                    <img src="assets/images/placeholder/gallery3.jpg" alt="Galería 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(2)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-animate="fade-in-up">
+                    <img src="assets/images/placeholder/gallery4.jpg" alt="Galería 4" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(3)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-animate="fade-in-up">
+                    <img src="assets/images/placeholder/gallery5.jpg" alt="Galería 5" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(4)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-animate="fade-in-up">
+                    <img src="assets/images/placeholder/gallery6.jpg" alt="Galería 6" loading="lazy">
+                    <div class="gallery-overlay">
+                        <button class="gallery-btn" onclick="openLightbox(5)">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox para galería -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Imagen ampliada">
+        </div>
+        <div class="lightbox-counter">
+            <span id="lightboxCounter">1 / 6</span>
+        </div>
+    </div>
+
+    <!-- ============================================
+         VIDEO DE PRESENTACIÓN
+    ============================================= -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in-up">
+                <span class="section-label">Conoce más</span>
+                <h2 class="section-title">Video Presentación</h2>
+            </div>
+            
+            <div class="video-container" data-animate="zoom-in">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/[VIDEO_ID]?rel=0" 
+                        title="Video de presentación [NOMBRE_NEGOCIO]"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EQUIPO / STAFF
+    ============================================= -->
+    <section class="team" id="equipo">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in-up">
+                <span class="section-label">Nuestro equipo</span>
+                <h2 class="section-title">Conoce a Nuestro Equipo</h2>
+                <p class="section-description">Profesionales apasionados comprometidos con tu satisfacción</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Miembro 1 -->
+                <div class="team-member" data-animate="fade-in-up">
+                    <div class="member-image">
+                        <img src="assets/images/placeholder/team1.jpg" alt="[NOMBRE_MIEMBRO_1]">
+                        <div class="member-social">
+                            <a href="[FACEBOOK_MIEMBRO_1]" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="[INSTAGRAM_MIEMBRO_1]" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>[NOMBRE_MIEMBRO_1]</h3>
+                        <p class="member-role">[CARGO_MIEMBRO_1]</p>
+                        <p class="member-bio">[BIO_CORTA_MIEMBRO_1]</p>
+                    </div>
+                </div>
+                
+                <!-- Miembro 2 -->
+                <div class="team-member" data-animate="fade-in-up">
+                    <div class="member-image">
+                        <img src="assets/images/placeholder/team2.jpg" alt="[NOMBRE_MIEMBRO_2]">
+                        <div class="member-social">
+                            <a href="[FACEBOOK_MIEMBRO_2]" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="[INSTAGRAM_MIEMBRO_2]" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>[NOMBRE_MIEMBRO_2]</h3>
+                        <p class="member-role">[CARGO_MIEMBRO_2]</p>
+                        <p class="member-bio">[BIO_CORTA_MIEMBRO_2]</p>
+                    </div>
+                </div>
+                
+                <!-- Miembro 3 -->
+                <div class="team-member" data-animate="fade-in-up">
+                    <div class="member-image">
+                        <img src="assets/images/placeholder/team3.jpg" alt="[NOMBRE_MIEMBRO_3]">
+                        <div class="member-social">
+                            <a href="[FACEBOOK_MIEMBRO_3]" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="[INSTAGRAM_MIEMBRO_3]" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>[NOMBRE_MIEMBRO_3]</h3>
+                        <p class="member-role">[CARGO_MIEMBRO_3]</p>
+                        <p class="member-bio">[BIO_CORTA_MIEMBRO_3]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIOS
+    ============================================= -->
+    <section class="testimonials parallax-section">
+        <div class="parallax-bg" data-speed="0.4"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-in-up">
+                <span class="section-label">Opiniones</span>
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card" data-animate="fade-in-up">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"[TESTIMONIO_1]"</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/placeholder/client1.jpg" alt="[NOMBRE_CLIENTE_1]">
+                        <div>
+                            <h4>[NOMBRE_CLIENTE_1]</h4>
+                            <p>[CARGO_CLIENTE_1]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-animate="fade-in-up">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"[TESTIMONIO_2]"</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/placeholder/client2.jpg" alt="[NOMBRE_CLIENTE_2]">
+                        <div>
+                            <h4>[NOMBRE_CLIENTE_2]</h4>
+                            <p>[CARGO_CLIENTE_2]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-animate="fade-in-up">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"[TESTIMONIO_3]"</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/placeholder/client3.jpg" alt="[NOMBRE_CLIENTE_3]">
+                        <div>
+                            <h4>[NOMBRE_CLIENTE_3]</h4>
+                            <p>[CARGO_CLIENTE_3]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         HORARIOS DE ATENCIÓN
+    ============================================= -->
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-content">
+                <div class="schedule-text" data-animate="fade-in-right">
+                    <span class="section-label">Horarios</span>
+                    <h2 class="section-title">¿Cuándo Estamos Disponibles?</h2>
+                    <p>Nos adaptamos a tus necesidades. Encuentra el mejor momento para visitarnos.</p>
+                </div>
+                
+                <div class="schedule-table" data-animate="fade-in-left">
+                    <div class="schedule-row">
+                        <span class="day">Lunes - Viernes</span>
+                        <span class="time">[HORARIO_SEMANA]</span>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="day">Sábado</span>
+                        <span class="time">[HORARIO_SABADO]</span>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="day">Domingo</span>
+                        <span class="time">[HORARIO_DOMINGO]</span>
+                    </div>
+                    
+                    <div class="schedule-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>[NOTA_HORARIOS]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACTO + MAPA
+    ============================================= -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header" data-animate="fade-in-up">
+                <span class="section-label">Contáctanos</span>
+                <h2 class="section-title">Estamos Aquí Para Ti</h2>
+                <p class="section-description">Envíanos un mensaje o visítanos en nuestra ubicación</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Formulario -->
+                <div class="contact-form-wrapper" data-animate="fade-in-right">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/[TU_FORMSPREE_ID]" method="POST">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Nombre completo
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i> Teléfono
+                                </label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(000) 000-0000">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> Email
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">
+                                <i class="fas fa-list"></i> Servicio de interés
+                            </label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="servicio1">[SERVICIO_1]</option>
+                                <option value="servicio2">[SERVICIO_2]</option>
+                                <option value="servicio3">[SERVICIO_3]</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Mensaje
+                            </label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                Acepto el <a href="privacidad.html" target="_blank">aviso de privacidad</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-3d btn-block">
+                            <span>Enviar mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Información de contacto -->
+                <div class="contact-info-wrapper" data-animate="fade-in-left">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>[DIRECCION]<br>[CIUDAD]</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p><a href="tel:[TELEFONO]">[TELEFONO]</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="/cdn-cgi/l/email-protection#8bd0cec6cac2c7d6">[EMAIL]</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/[WHATSAPP]" target="_blank">[WHATSAPP_DISPLAY]</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Redes sociales -->
+                    <div class="social-links">
+                        <a href="[FACEBOOK_URL]" target="_blank" class="social-btn">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="[INSTAGRAM_URL]" target="_blank" class="social-btn">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="[TWITTER_URL]" target="_blank" class="social-btn">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/[WHATSAPP]" target="_blank" class="social-btn">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mapa integrado -->
+            <div class="map-container" data-animate="fade-in-up">
+                <iframe 
+                    src="[GOOGLE_MAPS_EMBED_URL]"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/images/placeholder/logo.png" alt="[NOMBRE_NEGOCIO]" class="footer-logo">
+                    <p class="footer-description">[DESCRIPCION_CORTA]</p>
+                    <div class="footer-social">
+                        <a href="[FACEBOOK_URL]" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="[INSTAGRAM_URL]" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="[TWITTER_URL]" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/[WHATSAPP]" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">[SERVICIO_1]</a></li>
+                        <li><a href="#servicios">[SERVICIO_2]</a></li>
+                        <li><a href="#servicios">[SERVICIO_3]</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> [DIRECCION_CORTA]</li>
+                        <li><i class="fas fa-phone"></i> [TELEFONO]</li>
+                        <li><i class="fas fa-envelope"></i> [EMAIL]</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 [NOMBRE_NEGOCIO]. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="privacidad.html">Aviso de Privacidad</a>
+                    <span>|</span>
+                    <a href="terminos.html">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BOTÓN FLOTANTE WHATSAPP
+    ============================================= -->
+    <a href="https://wa.me/[WHATSAPP]?text=Hola, me interesa información sobre [NOMBRE_NEGOCIO]" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================
+         CHATBOT FLOTANTE
+    ============================================= -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+            <span class="chatbot-badge">1</span>
+        </button>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <img src="assets/images/placeholder/avatar.png" alt="Asistente">
+                </div>
+                <div class="chatbot-title">
+                    <h4>Asistente Virtual</h4>
+                    <span class="chatbot-status">En línea</span>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <!-- Los mensajes se cargan dinámicamente -->
+            </div>
+            
+            <div class="chatbot-options" id="chatbotOptions">
+                <!-- Las opciones se cargan dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         SCRIPTS
+    ============================================= -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/gallery.js"></script>
+    <script src="assets/js/anim
