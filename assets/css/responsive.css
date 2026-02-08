@@ -1,0 +1,772 @@
+/* ============================================
+   RESPONSIVE.CSS - ADAPTACIÓN TOTAL
+   Mobile-first responsive design
+   ============================================ */
+
+/* ============================================
+   TABLET - MAX 1024px
+   ============================================ */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .nav-container {
+        padding: 0 30px;
+    }
+    
+    .nav-menu {
+        gap: 25px;
+    }
+    
+    .section-title {
+        font-size: clamp(2.5rem, 6vw, 3rem);
+    }
+    
+    .hero-title {
+        font-size: clamp(2.5rem, 7vw, 5rem);
+    }
+    
+    .about-content,
+    .featured-content,
+    .schedule-content,
+    .contact-content {
+        gap: 40px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* ============================================
+   TABLET PEQUEÑA - MAX 900px
+   ============================================ */
+@media (max-width: 900px) {
+    /* Navegación móvil */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        background: var(--color-bg);
+        flex-direction: column;
+        padding: 100px 40px 40px;
+        gap: 30px;
+        box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+    
+    /* Overlay para menú */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+    
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Grids responsivos */
+    .about-content,
+    .featured-content,
+    .schedule-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* ============================================
+   MÓVIL GRANDE - MAX 768px
+   ============================================ */
+@media (max-width: 768px) {
+    /* Tipografía reducida */
+    html {
+        font-size: 15px;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Beneficios */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .benefit-card {
+        padding: 30px 25px;
+    }
+    
+    /* Estadísticas */
+    .about-stats {
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    /* Servicios */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Producto bandera */
+    .featured-text h2 {
+        font-size: 2rem;
+    }
+    
+    .price-current {
+        font-size: 2.5rem;
+    }
+    
+    /* Galería */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .gallery-item {
+        height: 200px;
+    }
+    
+    /* Video */
+    .video-wrapper {
+        border-radius: 15px;
+    }
+    
+    /* Equipo */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .member-image {
+        height: 300px;
+    }
+    
+    /* Testimonios */
+    .testimonials-slider {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Horarios */
+    .schedule-table {
+        padding: 30px;
+    }
+    
+    .schedule-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    /* Formulario de contacto */
+    .contact-form-wrapper {
+        padding: 35px 25px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        padding: 30px 25px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Chatbot */
+    .chatbot-window {
+        width: calc(100vw - 40px);
+        max-width: 350px;
+    }
+    
+    /* Lightbox */
+    .lightbox-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .lightbox-prev {
+        left: 15px;
+    }
+    
+    .lightbox-next {
+        right: 15px;
+    }
+    
+    .lightbox-close {
+        width: 40px;
+        height: 40px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+/* ============================================
+   MÓVIL MEDIANO - MAX 576px
+   ============================================ */
+@media (max-width: 576px) {
+    /* Tipografía más pequeña */
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Navegación */
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .navbar.scrolled .logo-img {
+        height: 35px;
+    }
+    
+    .btn-whatsapp-nav {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 450px;
+    }
+    
+    .hero-badge {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    
+    .hero-title {
+        font-size: clamp(1.8rem, 10vw, 3rem);
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+    }
+    
+    .hero-scroll-indicator {
+        bottom: 20px;
+    }
+    
+    /* Secciones */
+    section {
+        padding: 60px 0 !important;
+    }
+    
+    .section-header {
+        margin-bottom: 35px;
+    }
+    
+    .section-label {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+    
+    .section-title {
+        font-size: clamp(1.8rem, 7vw, 2.2rem);
+    }
+    
+    .section-description {
+        font-size: 0.95rem;
+    }
+    
+    /* Botones */
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+    
+    /* Beneficios */
+    .benefit-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .benefit-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* About */
+    .about-badge {
+        bottom: 15px;
+        right: 15px;
+        padding: 15px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .about-badge i {
+        font-size: 1.5rem;
+    }
+    
+    /* Estadísticas */
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    /* Servicios */
+    .service-image {
+        height: 220px;
+    }
+    
+    .service-content {
+        padding: 25px 20px;
+    }
+    
+    .service-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .service-price {
+        font-size: 1.5rem;
+    }
+    
+    /* Producto bandera */
+    .featured-label {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+    
+    .featured-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .featured-description {
+        font-size: 1rem;
+    }
+    
+    .featured-benefits li {
+        font-size: 1rem;
+    }
+    
+    .price-old {
+        font-size: 1.2rem;
+    }
+    
+    .price-current {
+        font-size: 2rem;
+    }
+    
+    /* Galería */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .gallery-item {
+        height: 250px;
+    }
+    
+    .gallery-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    /* Equipo */
+    .member-image {
+        height: 350px;
+    }
+    
+    .member-info {
+        padding: 20px;
+    }
+    
+    .member-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Testimonios */
+    .testimonial-card {
+        padding: 30px 25px;
+    }
+    
+    .testimonial-card::before {
+        font-size: 5rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    /* Horarios */
+    .schedule-table {
+        padding: 25px 20px;
+    }
+    
+    .schedule-row .day,
+    .schedule-row .time {
+        font-size: 1rem;
+    }
+    
+    /* Contacto */
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .form-group label {
+        font-size: 0.95rem;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+    
+    .contact-info {
+        padding: 25px 20px;
+    }
+    
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .info-item h4 {
+        font-size: 1rem;
+    }
+    
+    .social-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 60px 0 20px;
+    }
+    
+    .footer-logo {
+        width: 120px;
+    }
+    
+    .footer-col h4 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* WhatsApp flotante */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 90px;
+        right: 20px;
+        font-size: 1.8rem;
+    }
+    
+    /* Chatbot */
+    .chatbot-container {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .chatbot-toggle {
+        width: 55px;
+        height: 55px;
+        font-size: 1.6rem;
+    }
+    
+    .chatbot-window {
+        width: calc(100vw - 30px);
+        bottom: 70px;
+        right: -7.5px;
+    }
+    
+    .chatbot-header {
+        padding: 15px;
+    }
+    
+    .chatbot-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .chatbot-title h4 {
+        font-size: 1rem;
+    }
+    
+    .chatbot-messages {
+        padding: 15px;
+    }
+    
+    .chatbot-options {
+        padding: 15px;
+    }
+}
+
+/* ============================================
+   MÓVIL PEQUEÑO - MAX 375px
+   ============================================ */
+@media (max-width: 375px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .hero-title {
+        font-size: clamp(1.6rem, 12vw, 2.5rem);
+    }
+    
+    .section-title {
+        font-size: clamp(1.6rem, 8vw, 2rem);
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+    }
+    
+    .gallery-item {
+        height: 200px;
+    }
+    
+    .member-image {
+        height: 300px;
+    }
+}
+
+/* ============================================
+   LANDSCAPE MODE - MÓVILES HORIZONTALES
+   ============================================ */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .hero-scroll-indicator {
+        display: none;
+    }
+    
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .nav-menu {
+        flex-direction: row;
+        height: auto;
+        position: relative;
+        width: auto;
+        padding: 0;
+        left: 0;
+        box-shadow: none;
+        background: transparent;
+    }
+}
+
+/* ============================================
+   IMPRESIÓN
+   ============================================ */
+@media print {
+    .navbar,
+    .whatsapp-float,
+    .chatbot-container,
+    .hero-scroll-indicator,
+    .lightbox,
+    .nav-toggle {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: auto;
+        page-break-after: always;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* ============================================
+   ALTA RESOLUCIÓN / RETINA
+   ============================================ */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimizaciones para pantallas Retina */
+    .logo-img,
+    .member-image img,
+    .gallery-item img,
+    .service-image img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* ============================================
+   MODO OSCURO (Preferencia del sistema)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    /* Los temas oscuros ya están manejados en themes.css */
+    /* Aquí solo ajustes adicionales si son necesarios */
+}
+
+/* ============================================
+   REDUCCIÓN DE MOVIMIENTO (Accesibilidad)
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
